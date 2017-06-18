@@ -27,13 +27,14 @@ public partial class _Default : Page
             {
                 if (userPostedFile.ContentLength > 0)
                 {
-                    Span1.Text += "<u>File #" + (i + 1) + "</u><br>";
-                    Span1.Text += "File Content Type: " + userPostedFile.ContentType + "<br>";
-                    Span1.Text += "File Size: " + userPostedFile.ContentLength + "kb<br>";
-                    Span1.Text += "File Name: " + userPostedFile.FileName + "<br>";
+                    //Span1.Text += "<u>File #" + (i + 1) + "</u><br>";
+                    //Span1.Text += "File Content Type: " + userPostedFile.ContentType + "<br>";
+                    //Span1.Text += "File Size: " + userPostedFile.ContentLength + "kb<br>";
+                    //Span1.Text += "File Name: " + userPostedFile.FileName + "<br>";
 
-                    userPostedFile.SaveAs(filepath + "\\" + Path.GetFileName(userPostedFile.FileName));
-                    Span1.Text += "Location where saved: " + filepath + "\\" + Path.GetFileName(userPostedFile.FileName) + "<p>";
+                    //userPostedFile.SaveAs(filepath + "\\" + Path.GetFileName(userPostedFile.FileName));
+                    //Span1.Text += "Location where saved: " + filepath + "\\" + Path.GetFileName(userPostedFile.FileName) + "<p>";
+                    Span1.Text += userPostedFile.FileName + "上傳成功" + "<br>";
                 }
             }
             catch (Exception Ex)
